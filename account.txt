@@ -1,4 +1,5 @@
-id=&username=700800&passwd=999888
-id=&username=900600&passwd=444333
-id=&username=900700&passwd=111666
-id=&username=800100&passwd=777000
+700800|999888
+900700|111666
+800100|777000
+
+id=&username=900600&passwd=444222
